@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+}
+
+.containerfooter {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(44, 149, 44);
+  height: 80vh;
+  width: 100vw;
+  justify-content: space-around;
+  border: solid black;
+}
+.ballfooter {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+
+  animation: 6s pass;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: 90vw;
+  z-index: 999;
+}
+
+@keyframes pass {
+  100% {
+    margin-left: 5vw;
+    transform: rotate(-4000deg);
+  }
+}
+
+.ball2footer {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  animation: 1.5s pass2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: 50vw;
+  z-index: 999;
+}
+@keyframes pass2 {
+  100% {
+    margin-left: 90vw;
+    transform: rotate(4000deg);
+  }
+}
+
+.nikefooter {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+.adidasfooter {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+.arealeftfooter {
+  border: solid white;
+  height: 40vh;
+  width: 20vh;
+  position: absolute;
+  top: 22vh;
+  z-index: 2;
+}
+.arearightfooter {
+  border: solid white;
+  height: 40vh;
+  width: 20vh;
+  position: absolute;
+  top: 22vh;
+  right: 0vw;
+  z-index: 2;
+}
+.middlelinefooter {
+  position: absolute;
+  left: 50%;
+  height: 80vh;
+  width: 0.5vh;
+  background-color: white;
+}
+.middlecirclefooter {
+  position: absolute;
+  top: 27%;
+  left: 41%;
+  border: solid white;
+  border-radius: 50%;
+  height: 36%;
+  width: 18%;
+}
+
+/* brazil */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: darkblue;
+  margin-top: 5vh;
+  font-size: 3vh;
+}
+
+.box {
+  height: 30vh;
+  width: 30vw;
+  background: linear-gradient(to top right, yellow 50%, transparent 0%) top
+      right,
+    linear-gradient(to top left, yellow 50%, transparent 0%) top left,
+    linear-gradient(to bottom right, yellow 49.5%, transparent 0%) bottom right,
+    linear-gradient(to bottom left, yellow 49.5%, transparent 0%) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  margin-block-start: 15vh;
+  background-color: green;
+}
+.circle {
+  background-color: darkblue;
+  display: inline-block;
+  height: 23vh;
+  width: 12vw;
+  border-radius: 50%;
+  position: relative;
+  bottom: 22.5vh;
+
+  margin-left: 9.1vw;
+  transition: 2.5s;
+}
+.circle:hover {
+  opacity: 0;
+}
+
+.text {
+  font-size: 1vh;
+  padding-top: 0.8vh;
+  height: 7%;
+  width: 99%;
+  margin: 37.5% auto;
+  color: darkgreen;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4vw;
+  transform: rotate(22deg); /* Equal to rotateZ(45deg) */
+}
+
+.ball {
+  height: 5vh;
+  width: 5vw;
+  margin-block: 50vh;
+
+  border-radius: 50%;
+}
+.ball:active {
+  transition: 2s;
+
+  height: 27vh;
+  width: 27vw;
+  transform: translate(0.2%, -291%) rotate(-500deg);
+}
+
+/* nav {
+  margin-inline-end: 300px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: fixed;
+} */
+
+.kick {
+  font-size: 2vh;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: absolute;
+  top: 170vh;
+}
+
+.doHover {
+  height: 10vh;
+
+  font-size: 2vh;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: absolute;
+  top: 100vh;
+  left: 10vw;
+}
+
+.ball2 {
+  height: 23vh;
+  width: 12vw;
+  opacity: 1;
+
+  position: static;
+  bottom: 29vh;
+
+  margin-left: 9.1vw;
+
+  /* position: static;
+    margin-left: 490px;
+    padding-top: 100px; */
+
+  margin-block-start: 3vh;
+}
