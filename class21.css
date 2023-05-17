@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+}
+
+.containerfooter {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(44, 149, 44);
+  height: 80vh;
+  width: 100vw;
+  justify-content: space-around;
+  border: solid black;
+}
+.ballfooter {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+
+  animation: 6s pass;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: 90vw;
+  z-index: 999;
+}
+
+@keyframes pass {
+  100% {
+    margin-left: 5vw;
+    transform: rotate(-4000deg);
+  }
+}
+
+.ball2footer {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  animation: 1.5s pass2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: 50vw;
+  z-index: 999;
+}
+@keyframes pass2 {
+  100% {
+    margin-left: 90vw;
+    transform: rotate(4000deg);
+  }
+}
+
+.nikefooter {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+.adidasfooter {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+.arealeftfooter {
+  border: solid white;
+  height: 40vh;
+  width: 20vh;
+  position: absolute;
+  top: 22vh;
+  z-index: 2;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    height: 30vh;
+    width: 10vh;
+    position: absolute;
+    top: 28vh;
+    z-index: 2;
+  }
+}
+.arearightfooter {
+  border: solid white;
+  height: 40vh;
+  width: 20vh;
+  position: absolute;
+  top: 22vh;
+  right: 0vw;
+  z-index: 2;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    height: 30vh;
+    width: 10vh;
+    top: 28vh;
+  }
+}
+.middlelinefooter {
+  position: absolute;
+  left: 50%;
+  height: 80vh;
+  width: 0.5vh;
+  background-color: white;
+}
+.middlecirclefooter {
+  position: absolute;
+  top: 27%;
+  left: 41%;
+  border: solid white;
+  border-radius: 50%;
+  height: 36%;
+  width: 18%;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    border: solid white;
+    left: 35%;
+    border-radius: 50%;
+    height: 30%;
+    width: 30%;
+  }
+}
+
+/* brazil */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: darkblue;
+  margin-top: 5vh;
+  font-size: 3vh;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+ 
+    margin-top: 60px;
+    width: 150px;
+    text-align: center;
+  }
+
+
+}
+
+.box {
+  background: linear-gradient(to top right, yellow 50%, transparent 0%) top
+      right,
+    linear-gradient(to top left, yellow 50%, transparent 0%) top left,
+    linear-gradient(to bottom right, yellow 49.5%, transparent 0%) bottom right,
+    linear-gradient(to bottom left, yellow 49.5%, transparent 0%) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  margin-block-start: 15vh;
+  background-color: green;
+
+  @media screen and (min-width: 3000px) and (max-width: 99999px) {
+    width: 1560px; /* 2*sin(120/2)*150 = 260 */
+    height: 900px; /* 2*sin(60/2)*150  = 150 OR 2*cos(120/2)*150  = 150*/
+  }
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    width: 400px; /* 2*sin(120/2)*150 = 260 */
+    height: 180px; /* 2*sin(60/2)*150  = 150 OR 2*cos(120/2)*150  = 150*/
+  }
+}
+.circle {
+  background-color: darkblue;
+  display: inline-block;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  position: relative;
+  bottom: 588px;
+
+  margin-left: 490px;
+  transition: 2.5s;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    width: 150px; /* 2*sin(120/2)*150 = 260 */
+    height: 132px; /* 2*sin(60/2)*150  = 150 OR 2*cos(120/2)*150  = 150*/
+    margin-left: 125px;
+    bottom: 140px;
+  }
+}
+.circle:hover {
+  opacity: 0;
+}
+
+.text {
+  font-size: 1vh;
+  padding-top: 0.8vh;
+  height: 7%;
+  width: 100%;
+  margin: 46.5% auto;
+  color: darkgreen;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transform: rotate(22deg); /* Equal to rotateZ(45deg) */
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+    padding-top: 0.5vh;
+    letter-spacing: 2px;
+
+    width: 98%;
+  }
+}
+
+.ball {
+  height: 100px;
+  width: 100px;
+  margin-block: 700px;
+
+  border-radius: 50%;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    height: 40px;
+    width: 40px;
+    margin-block: 350px;
+  }
+}
+.ball:active {
+  transition: 2s;
+
+  height: 650px;
+  width: 650px;
+  transform: translate(0%, -225%) rotate(-500deg);
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    height: 150px;
+    width: 160px;
+    transform: translate(1%, -345%) rotate(-500deg);
+  }
+}
+
+nav {
+  margin-inline-end: 300px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: fixed;
+}
+.kick {
+  font-size: 2vh;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: absolute;
+  top: 170vh;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    position: absolute;
+    top: 185vh;
+
+    margin-bottom: 40px;
+  }
+}
+
+.doHover {
+  height: 200px;
+
+  font-size: 2vh;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: absolute;
+  top: 2800px;
+  left: 990px;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    font-size: 2vh;
+    font-weight: 600;
+    top: 690px;
+    left: 100px;
+  }
+}
+
+.ball2 {
+  height: 600px;
+  width: 600px;
+  opacity: 1;
+  position: static;
+  margin-left: 490px;
+  padding-top: 100px;
+
+  margin-block-start: 50px;
+
+  @media screen and (min-width: 1px) and (max-width: 3000px) {
+    width: 140px; /* 2*sin(120/2)*150 = 260 */
+    height: 140px; /* 2*sin(60/2)*150  = 150 OR 2*cos(120/2)*150  = 150*/
+    margin-left: 130px;
+    margin-top: -80px;
+  }
+}
