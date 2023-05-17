@@ -123,11 +123,11 @@ h1 {
 .circle {
   background-color: darkblue;
   display: inline-block;
-  height: 23vh;
+  height: 24vh;
   width: 12vw;
   border-radius: 50%;
   position: relative;
-  bottom: 22.5vh;
+  bottom: 23vh;
 
   margin-left: 9.1vw;
   transition: 2.5s;
